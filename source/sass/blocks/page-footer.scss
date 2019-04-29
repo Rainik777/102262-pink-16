@@ -1,0 +1,19 @@
+.page-footer {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .page-footer {
+    padding: 35px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-footer {
+    padding: 60px 130px 70px;
+  }
+}
