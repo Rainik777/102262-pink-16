@@ -1,0 +1,13 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/*Global and vars*/
+@import "var.scss";
+@import "global.scss";
+
+/*Blocks*/
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/intro.scss";
+@import "blocks/information.scss";
+@import "blocks/round-diagram.scss";

@@ -3,10 +3,216 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__logo-and-menu-block">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Logo Pink">
+        <button class="main-menu__toggle main-menu__toggle--close">Закрыть</button>
+      </div>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--current" href="#">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Фотография</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">HTML Academy</a></a></a>
+        </li>
+      </ul>
+    </header>
+    <main class="index-main">
+      <h1 class="visually-hidden">Приложение Pink</h1>
+      <section class="intro">
+        <h2 class="visually-hidden">Скачать приложение Pink</h2>
+        <div class="intro__description-block">
+          <p class="intro__slogan">
+            Взгляни на жизнь иначе!
+          </p>
+          <a class="intro__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <ul class="intro__logo-list">
+            <li class="intro__logo-item intro__logo-item--apple">
+              <span class="visually-hidden">Apple</span>
+            </li>
+            <li class="intro__logo-item intro__logo-item--android">
+              <span class="visually-hidden">Android</span>
+            </li>
+            <li class="intro__logo-item intro__logo-item--windows">
+              <span class="visually-hidden">Windows</span>
+            </li>
+          </ul>
+          <p class="intro__summary">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <section class="information">
+        <h2 class="visually-hidden">Информация о приложении Pink</h2>
+        <div class="information__text-block">
+          <span class="information__text">Устали от серости и мегаполиса?</span>
+          <span class="information__text">Нам есть, что вам<br>предложить!</span>
+        </div>
+        <div class="information__list-block">
+          <ul class="information__list">
+            <li class="information__item">
+              <h3 class="information__header">Поднимает настроение</h3>
+              <p class="information__summary">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__header">Меняет мир вокруг</h3>
+              <p class="information__summary">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__header">Заводит новых друзей</h3>
+              <p class="information__summary">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="round-diagram">
+        <h2 class="round-diagram__header">Эффект<br>на 24 часа!</h2>
+        <p class="round-diagram__summary">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a class="round-diagram__link" href="#">Узнать больше об исследовании</a>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <a class="reviews__navigation reviews__navigation--previous" href="#"><span class="visually-hidden">Previous</span></a>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <h3 class="reviews__author">Николай Петров</h3>
+            <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+        <a class="reviews__navigation reviews__navigation--next" href="#"><span class="visually-hidden">Next</span></a>
+        <ul class="reviews__breadcrubs-list">
+          <li class="reviews__breadcrubs-item">
+            <a href="reviews__breadcrubs-link"><span class="visually-hidden">1</span></a>
+          </li>
+          <li class="reviews__breadcrubs-item">
+            <a href="reviews__breadcrubs-link"><span class="visually-hidden">2</span></a>
+          </li>
+          <li class="reviews__breadcrubs-item">
+            <a href="reviews__breadcrubs-link"><span class="visually-hidden">3</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Цены на приложение Pink</h2>
+        <table class="price-table">
+          <th>
+            <td class="price-table__hcell">
+              <span class="price-table__rate">База</span>
+              <span class="price-table__price">1,99 USD</span>
+            </td>
+            <td class="price-table__hcell price-table__hcell--hit">
+              <span class="price-table__rate">Стандарт</span>
+              <span class="price-table__price">3,99 USD</span>
+            </td>
+            <td class="price-table__hcell">
+              <span class="price-table__rate">Анлим</span>
+              <span class="price-table__price">9,99 USD</span>
+            </td>
+          </th>
+          <tr>
+            <td class="price-table__option">
+              Розовый фильтр
+            </td>
+            <td class="price-table__option--included">
+              <span class="visually-hidden">Included</span>
+            </td>
+            <td class="price-table__option--included">
+              <span class="visually-hidden">Included</span>
+            </td>
+            <td class="price-table__option--included">
+              <span class="visually-hidden">Included</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price-table__option">
+              Смайлики
+            </td>
+            <td class="price-table__option--not-included">
+              <span class="visually-hidden">Not-included</span>
+            </td>
+            <td class="price-table__option--included">
+              <span class="visually-hidden">Included</span>
+            </td>
+            <td class="price-table__option--included">
+              <span class="visually-hidden">Included</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="price-table__option">
+              Комментарии
+            </td>
+            <td class="price-table__option--not-included">
+              <span class="visually-hidden">Not-included</span>
+            </td>
+            <td class="price-table__option--not-included">
+              <span class="visually-hidden">Not-included</span>
+            </td>
+            <td class="price-table__option--included">
+              <span class="visually-hidden">Included</span>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__text">
+          Остались вопросы? Свяжитесь с нами!
+        </p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h2 class="contacts-header">Звоните:</h2>
+            <a class="contacts__link" href="+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <h2 class="contacts-header">Пишите:</h2>
+            <a class="contacts__link" href="mailto:main@htmlacademy.ru">main@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h2 class="contacts-header">Приезжайте в гости:</h2>
+            <p class="contacts__link">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320px" height="615px" alt="Карта">
+        <img class="contacts__marker" src="img/icon-map-marker.svg" width="35px" height="35px" alt="Маркер для карты">
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img src="img/logo-pink-blue-mobile.svg" width="147px" height="40px" alt="Logo Pink">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube"><span class="visually-hidden">YouTube</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__developed">
+        Разработано
+        <a class="page-footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </footer>
   </body>
 </html>

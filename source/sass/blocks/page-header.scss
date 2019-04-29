@@ -1,0 +1,28 @@
+.page-header {
+  width: auto;
+  background-color: $color-bg-dark-blue;
+}
+
+.page-header__logo-and-menu-block {
+  padding: 20px 20px 25px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: $width-desktop) {
+  .page-header {
+    margin-bottom: -100px;
+    background-color: rgba($color-bg-dark-blue, 0.9);
+    z-index: 66;
+  }
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .page-header__logo-and-menu-block {
+    padding: 25px 130px 45px 130px;
+  }
+}
