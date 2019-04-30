@@ -15,13 +15,13 @@
 .photo__description {
   margin: 0 auto;
   padding: 25px 20px;
-  width:280px;
+  width: 280px;
   box-sizing: border-box;
   background-color: $color-bg-light-grey;
 }
 
 .photo__author {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -90,6 +90,7 @@
 @media (min-width: $width-desktop) {
   .photo--panorama {
     margin-bottom: 50px;
+
     & .photo__description {
       width: 940px;
     }

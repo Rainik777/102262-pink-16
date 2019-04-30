@@ -19,11 +19,13 @@
     box-sizing: border-box;
     background-color: $color-bg-dark-blue;
     text-align: center;
+
     &:first-of-type {
       border-right: 2px solid #f2f2f2;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
     }
+
     &:last-of-type {
       border-left: 2px solid #f2f2f2;
       border-top-right-radius: 3px;

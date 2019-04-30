@@ -12,6 +12,7 @@
   color: #ffffff;
   font-size: 24px;
   font-weight: normal;
+
   & br {
     display: none;
   }
@@ -49,6 +50,7 @@
     box-sizing: border-box;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-position: center;
+
     & br {
       display: block;
     }
