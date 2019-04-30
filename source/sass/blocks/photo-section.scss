@@ -30,9 +30,5 @@
     display: flex;
     flex-wrap: wrap;
     width: 300px;
-    &:first-of-type {
-      display: block;
-      width: 100%;
-    }
   }
 }

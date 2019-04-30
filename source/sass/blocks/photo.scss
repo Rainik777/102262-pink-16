@@ -1,5 +1,5 @@
 .photo__image {
-  margin: 0 auto -3px;
+  margin: 0 auto;
   align-self: center;
 }
 
@@ -37,5 +37,35 @@
 }
 
 @media (min-width: $width-tablet) {
+  .photo--panorama {
+    padding: 0;
+    width: 100%;
 
+    & .photo__description {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 620px;
+    }
+
+    & .photo__author-and-time {
+      order: 1;
+    }
+
+    & .photo__like-section {
+      order: 2;
+    }
+
+    & .photo__text {
+      margin: 0;
+      width: 100%;
+      order: 3;
+    }
+  }
+
+  .photo {
+    min-height: 175px;
+  }
 }
