@@ -17,24 +17,44 @@
   }
 }
 
+.photo-page__summary {
+  margin: 0;
+  padding: 55px 35px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
 @media (min-width: $width-tablet) {
   .photo-page__header {
     padding: 80px 20px 150px;
     min-height: 330px;
     box-sizing: border-box;
-    background-position: center -180px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center;
     font-size: 48px;
+  }
+
+  .photo-page__summary {
+    padding: 100px 110px 85px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .photo-page__header {
+    margin-top: -100px;
     padding: 180px 130px 110px;
     min-height: 395px;
     box-sizing: border-box;
-    background-position: center -620px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: center;
     & br {
       display: block;
     }
+  }
+
+  .photo-page__summary {
+    padding: 100px 310px 95px;
   }
 }

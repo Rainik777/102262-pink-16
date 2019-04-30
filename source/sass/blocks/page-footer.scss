@@ -2,6 +2,21 @@
   display: none;
 }
 
+.page-footer--inner {
+  display: block;
+  padding: 40px 60px 35px;
+  text-align: center;
+  & img {
+    margin-bottom: 40px;
+  }
+  & .social__list {
+    margin-bottom: 40px;
+  }
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .page-footer {
     padding: 35px 20px;

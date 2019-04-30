@@ -1,20 +1,26 @@
+.photo--panorama {
+  margin-bottom: 20px;
+}
+
 .photo__image {
-  margin: 0 auto;
-  align-self: center;
+  margin: 0;
+  display: block;
+}
+
+.photo__item {
+  background-color: $color-bg-light-grey;
+  margin-bottom: 20px;
 }
 
 .photo__description {
   margin: 0 auto;
-  padding: 25px 15px;
-  width: 280px;
+  padding: 25px 20px;
+  width:280px;
   box-sizing: border-box;
   background-color: $color-bg-light-grey;
 }
 
 .photo__author {
-  margin-left: 15px;
-  margin-right: 5px;
-  margin-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -24,48 +30,77 @@
   text-transform: uppercase;
 }
 
-.photo__text {
-  margin-left: 15px;
+.photo__comment {
   font-size: 14px;
-  line-height: 25px;
 }
 
-.photo__like-summary {
+.photo__like-sum {
   font-size: 12px;
-  color: $color-text-pink;
   text-transform: uppercase;
+  color: $color-text-pink;
+}
+
+.photo__wrapper {
+  padding: 0 20px;
+}
+
+.photo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: $width-tablet) {
   .photo--panorama {
-    padding: 0;
-    width: 100%;
-
     & .photo__description {
-      padding: 30px;
+      padding: 30px 20px;
+      width: 620px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      width: 620px;
     }
 
-    & .photo__author-and-time {
+    & .photo__author {
       order: 1;
     }
 
-    & .photo__like-section {
+    & .photo__like-block {
       order: 2;
     }
 
-    & .photo__text {
-      margin: 0;
+    & .photo__comment {
       width: 100%;
       order: 3;
     }
   }
 
-  .photo {
-    min-height: 175px;
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .photo--panorama {
+    margin-bottom: 50px;
+    & .photo__description {
+      width: 940px;
+    }
+  }
+
+  .photo__wrapper {
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  .photo__item {
+    margin-bottom: 55px;
   }
 }
