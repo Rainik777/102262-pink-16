@@ -1,0 +1,35 @@
+.photo-section__summary {
+  padding: 55px 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.photo-section__list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.photo-section__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .photo-section__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .photo-section__item {
+    width: 300px;
+    &:first-of-type {
+      width: 100%;
+    }
+  }
+}

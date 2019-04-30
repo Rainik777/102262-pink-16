@@ -1,0 +1,40 @@
+.photo-page__header {
+  margin: 0 auto;
+  padding: 35px 20px 90px;
+  min-height: 170px;
+  box-sizing: border-box;
+  background-color: $color-bg-dark-blue;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -60px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: normal;
+  & br {
+    display: none;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .photo-page__header {
+    padding: 80px 20px 150px;
+    min-height: 330px;
+    box-sizing: border-box;
+    background-position: center -180px;
+    font-size: 48px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .photo-page__header {
+    padding: 180px 130px 110px;
+    min-height: 395px;
+    box-sizing: border-box;
+    background-position: center -620px;
+    & br {
+      display: block;
+    }
+  }
+}
