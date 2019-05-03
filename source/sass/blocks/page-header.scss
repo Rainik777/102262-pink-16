@@ -1,0 +1,24 @@
+.page-header {
+  background-color: #1c2530;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include wrapper-set;
+}
+
+.page-header__title {
+  @include font-param(24px, 24px);
+  color: #ffffff;
+  font-weight: normal;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    max-width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
