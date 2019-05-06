@@ -34,12 +34,12 @@
 
 .table__name {
   margin: 0;
+
   @include font-param(18px, 30px);
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
 }
-
 
 .table__cost {
   margin-top: 0;
