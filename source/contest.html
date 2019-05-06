@@ -5,50 +5,185 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" class="page-header__logo-image" alt="Логотип">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="page-header__wrapper-desktop">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo logo">
+            <svg class="logo__icon logo__icon-mobile" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859">
+              <use xlink:href="img/sprite.svg#logo-h-mobile"></use>
+            </svg>
+            <svg class="logo__icon logo__icon-tablet" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+              <use xlink:href="img/sprite.svg#logo-h-tablet"></use>
+            </svg>
+            <svg class="logo__icon logo__icon-desktop" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+              <use xlink:href="img/sprite.svg#logo-h-desktop"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="contest.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="contest.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page-main">
       <section class="contest">
-        <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+        <div class="contest__title-container">
+          <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
+        <div class="contest__wrapper contest-description-wrapper">
+          <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest__description--notmobile">Пожалуйста, заполните форму ниже:</span></p>
+        </div>
+        <form class="contest__form form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="contest__wrapper user-info-container">
+            <fieldset class="form__user-info">
+              <legend class="visually-hidden">Имя пользователя</legend>
+              <p class="form__field">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
+              </p>
+              <p class="form__field">
+                <label for="first-name">Имя:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *">
+              </p>
+              <p class="form__field">
+                <label for="second-name">Отчество:</label>
+                <input type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже">
+              </p>
+            </fieldset>
+          </div>
+          <fieldset class="form__achieves">
+            <div class="contest__wrapper form__achieves-container">
+              <legend class="form__achieve-title form__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__achieve-list achieves">
+                <div class="achieves__container">
+                  <li class="achieves__item">
+                    <input type="checkbox" id="checkbox-shark"
+                    name="photo-with-shark" class="achieves__checkbox visually-hidden" checked>
+                    <label for="checkbox-shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="achieves__item">
+                    <input type="checkbox" id="checkbox-beach"
+                    name="burn-at-beach" class="achieves__checkbox visually-hidden">
+                    <label for="checkbox-beach">Обгорел на пляже</label>
+                  </li>
+                </div>
+                <div class="achieves__container">
+                  <li class="achieves__item">
+                    <input type="checkbox" id="checkbox-norris"
+                    name="see-chacknorris" class="achieves__checkbox visually-hidden">
+                    <label for="checkbox-norris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="achieves__item">
+                    <input type="checkbox" id="checkbox-souvenirs"
+                    name="buy-souvenirs" class="achieves__checkbox visually-hidden">
+                    <label for="checkbox-souvenirs">Накупил сувениров</label>
+                  </li>
+                </div>
+                <div class="achieves__container">
+                  <li class="achieves__item">
+                    <input type="checkbox" id="checkbox-tower"
+                    name="hold-tower" class="achieves__checkbox visually-hidden">
+                    <label for="checkbox-tower">Удержал башню</label>
+                  </li>
+                  <li class="achieves__item">
+                    <input type="checkbox" id="checkbox-hotel"
+                    name="destroy-hotel" class="achieves__checkbox visually-hidden">
+                    <label for="checkbox-hotel">Разгромил отель</label>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </fieldset>
+          <div class="contest__wrapper contacts-container">
+            <fieldset class="form__contacts">
+              <legend class="form__title">Контактная информация</legend>
+              <div class="field-container">
+                <p class="form__field">
+                  <label for="phone-number">Номер телефона:</label>
+                  <input type="tel" id="phone-number" name="phone-number" placeholder="Номер, пожалуйста">
+                </p>
+                <p class="form__field">
+                  <label for="e-mail">Адрес почты:</label>
+                  <input type="email" id="e-mail" name="e-mail" placeholder="Введите почту *" required>
+                </p>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="form__soft">
+            <div class="contest__wrapper soft-container">
+              <p class="form__title">С какими приложением путешествовали?</p>
+              <ul class="soft-list">
+                <li class="soft-list__item">
+                  <input type="radio" id="ios-radio"
+                  name="soft-os" value="iOS" class="soft-list__radio visually-hidden">
+                  <label for="ios-radio">Pink для iOS</label>
+                </li>
+                <li class="soft-list__item">
+                  <input type="radio" id="android-radio"
+                  name="soft-os" value="android" class="soft-list__radio visually-hidden">
+                  <label for="android-radio">Pink на Android</label>
+                </li>
+                <li class="soft-list__item">
+                  <input type="radio" id="win-radio"
+                  name="soft-os" value="windows" class="soft-list__radio visually-hidden">
+                  <label for="win-radio">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <div class="form__message">
+            <div class="contest__wrapper">
+              <label for="message-field" class="form__title">Опишите свои эмоции</label>
+              <textarea name="message" id="message-field" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </div>
+          <div class="contest__wrapper submit">
+            <button type="submit" class="form__submit button">Отправить форму</button>
+            <p class="form__legend"><span class="form__legend--star">*</span> &#8212 обязательные <span class="form__legend--desktop">для заполнения</span> поля</p>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" class="page-footer__logo-image" alt="Логотип">
+          <svg class="page-footer__logo-image page-footer__logo-image--tablet"x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+            <use xlink:href="img/sprite.svg#logo-f-tablet"></use>
+          </svg>
+          <svg class="page-footer__logo-image page-footer__logo-image--desktop"x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+            <use xlink:href="img/sprite.svg#logo-f-desktop"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twiter" href="#">twiter</a>
+              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">twiter</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">facebook</a>
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">facebook</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">youtube</a>
+              <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">youtube</span></a>
             </li>
           </ul>
         </div>
-        <p class="page-footer__copyright">Разработано<a href="https://htmlacademy.ru/" class="page-footer__copyright-link">htmlacademy</a></p>
+        <div class="page-footer__copyright"><span class="page-footer__develop-by">Разработано</span>
+          <a href="https://htmlacademy.ru/" class="page-footer__copyright-link">
+            <svg class="page-footer__icon" viewBox="0 0 60 60" width="40" height="40"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            <span class="visually-hidden">htmlacademy</span>
+          </a>
+        </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
