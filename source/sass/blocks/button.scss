@@ -1,0 +1,102 @@
+.button {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  font-size: $font-size--larger;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  user-select: none;
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+  cursor: pointer;
+
+  &--intro-download {
+    @media (min-width: $desktop-width) {
+      font-size: $font-size--larger + 3;
+      line-height: 0.8571em;
+    }
+
+    &:hover {
+      color: $color-secondary;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: $color-secondary--down;
+    }
+  }
+
+  &--success {
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    line-height: 1.1667em;
+    color: #ffffff;
+    background-color: $color-success;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 300px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-success--hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &--popup {
+    margin: 0 auto;
+  }
+
+  &--upload {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $color-secondary;
+    border-color: $color-secondary;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-secondary;
+      border-color: $color-secondary;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $color-main--lightest;
+    border-color: $gray-221;
+    background-color: transparent;
+
+    &:hover {
+      color: $color-main--lighten;
+      border-color: $gray-181;
+    }
+
+    &:active {
+      color: $color-main--lighten;
+      background-color: $gray-181;
+    }
+  }
+}

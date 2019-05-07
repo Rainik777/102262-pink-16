@@ -1,0 +1,35 @@
+.field-textarea__input {
+  width: 100%;
+  padding: 22px;
+  padding-top: 15px;
+  padding-bottom: 21px;
+  border: 2px solid $gray-229;
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 9em;
+    padding-bottom: 29px;
+  }
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    border-color: $color-secondary;
+  }
+
+  &::placeholder {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+    color: $color-main;
+  }
+}

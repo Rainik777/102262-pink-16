@@ -1,0 +1,100 @@
+.field-contact {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 59px;
+      height: 59px;
+      background-color: $gray-229;
+    }
+
+    &--phone {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 22px;
+        width: 19px;
+        height: 19px;
+        background-image: url("../img/icon-phone.svg");
+      }
+    }
+
+    &--mail {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: 21px;
+        width: 18px;
+        height: 14px;
+        background-image: url("../img/icon-mail.svg");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 374px;
+  }
+}
+
+.field-contact__text {
+  display: block;
+  margin-left: 22px;
+  margin-bottom: 6px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  line-height: 2.1428em;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 2;
+    margin-bottom: 0;
+  }
+}
+
+.field-contact__input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 22px;
+  padding-bottom: 21px;
+  border: 2px solid $gray-229;
+  border-radius: 2px;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 75px;
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    border-color: $color-secondary;
+  }
+
+  &::placeholder {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+    color: $color-main;
+  }
+}

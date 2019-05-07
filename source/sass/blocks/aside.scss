@@ -1,0 +1,125 @@
+.aside {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 95px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 125px;
+    padding-bottom: 70px;
+    background-color: $gray-242;
+  }
+}
+
+.aside__wrap {
+  position: relative;
+  width: 300px;
+  min-height: 250px;
+  margin-left: 50%;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 365px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      width: 238px;
+      height: 276px;
+      position: absolute;
+      top: -35px;
+      left: -310px;
+      background-image: url("../img/icon-timer.svg");
+      background-position: center center;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+      height: 345px;
+      top: -90px;
+      left: 0;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "24";
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 20px;
+      left: -290px;
+      padding-top: 20px;
+      font-size: $font-size--xl-large + 46px;
+      line-height: 1.5625em;
+      font-weight: 700;
+      text-align: center;
+      color: $color-secondary;
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-position: center center;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 255px;
+      height: 255px;
+      top: -23px;
+      left: 22px;
+      padding-top: 25px;
+      font-size: $font-size--xl-large + 70px;
+      line-height: 1.55em;
+    }
+  }
+}
+
+.aside__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+    padding-right: 100px;
+    font-size: $font-size--large + 6px;
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.aside__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+    padding-right: 30px;
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+}
+
+.aside__link {
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+    color: $color-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.667em;
+  }
+
+  &:hover {
+    color: $color-main;
+  }
+
+  &:active {
+    color: $color-main--down;
+  }
+}

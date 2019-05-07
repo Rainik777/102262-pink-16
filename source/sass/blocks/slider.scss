@@ -1,0 +1,61 @@
+/*это кадр слайдера*/
+.slider__list-item {
+  display: none;
+
+  &--active {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/*кнопки туда-сюда*/
+.slider__prev,
+.slider__next {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*обертка трех круглых кнопок*/
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+/*это три круглых кнопки*/
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background: $slider-bullet;
+  border: 3px solid $slider-bullet;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-color: $color-main;
+    border-radius: 6px;
+  }
+
+  &:hover {
+    border-color: $slider-bullet-hover;
+  }
+
+  &:active {
+    border-color: $slider-bullet-down;
+  }
+}

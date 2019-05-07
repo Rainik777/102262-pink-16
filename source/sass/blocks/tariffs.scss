@@ -1,0 +1,252 @@
+.tariffs {
+  padding-top: 91px;
+  padding-bottom: 44px;
+  overflow: hidden;
+  background-color: $gray-242;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+    padding-bottom: 25px;
+    overflow: visible;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 145px;
+    padding-bottom: 55px;
+  }
+}
+
+.tariffs__table {
+  width: 840px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+
+  &--slide2 {
+    margin-left: -260px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.tariffs__caption {
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $color-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--larger - 2px;
+    line-height: 1.875em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+}
+
+.tariffs__subcaption {
+  font-size: $font-size--large;
+  line-height: 1.25em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $color-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--larger;
+    line-height: 1.25em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--large;
+    line-height: 1.25em;
+  }
+}
+
+.tariffs__row {
+  line-height: 2.1428em;
+  color: $color-main;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+}
+
+.tariffs__data {
+  position: relative;
+  width: 25%;
+  padding: 15px 25px;
+  border: 1px solid $gray-229;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 15px 11px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 20px 15px 20px;
+  }
+
+  &--transparent {
+    color: $gray-242;
+    background-color: $gray-242;
+    border: none;
+    border-top: 2px solid $gray-242;
+  }
+
+  &--mob {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
+  &--tab {
+    @media (min-width: $tablet-width) {
+      color: #ffffff;
+    }
+  }
+
+  &--border {
+    border-bottom: 1px solid $color-main;
+  }
+
+  &--padding-caption {
+    padding-top: 15px;
+    padding-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 15px;
+    }
+  }
+
+  &--padding-subcaption {
+    padding-top: 0;
+    padding-bottom: 22px;
+
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 21px;
+    }
+  }
+
+  &--yes::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 31px;
+    height: 21px;
+    margin-top: -10px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      right: 50%;
+      margin-right: -15px;
+    }
+  }
+
+  &--no::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 27px;
+    height: 27px;
+    margin-top: -13px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      right: 50%;
+      margin-right: -13px;
+    }
+  }
+
+  &--banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+  }
+
+  &--banner::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    font-size: $font-size;
+    line-height: 2.1428em;
+    font-weight: 300;
+
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      left: 5px;
+    }
+  }
+}
+
+/*положение трех круглых кнопок слайдера*/
+.tariffs__toggles {
+  width: 60px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &--tab {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

@@ -1,160 +1,141 @@
 .page-footer {
+  padding: 40px 20px 35px 20px;
   background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
 
-.page-footer__logo-image--desktop {
-  display: none;
-}
-
-.page-footer__logo-image {
-  fill: #000000;
-
-  &:hover {
-    fill: #d22856;
+  @media (min-width: $tablet-width) {
+    padding: 30px 20px 36px 20px;
   }
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    padding: 73px 0 74px 0;
+  }
+
+  &--no-footer {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--photo-index {
+    @media (min-width: $desktop-width) {
+      padding-top: 100px;
+      padding-bottom: 72px;
+    }
   }
 }
 
-.page-footer__wrapper {
+.page-footer__links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+  margin: 0 auto;
 
-  @include wrapper-set;
-}
-
-.social {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-
-.social__list {
-  display: flex;
-
-  @include list-clear;
-}
-
-.social__link {
-  display: block;
-
-  width: 46px;
-  height: 46px;
-
-  border: 3px solid #e9ebec;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &:hover {
-    border: 3px solid #000000;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.social__item:not(:nth-child(3)) {
-  margin-right: 12px;
-}
-
-.social__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
-}
-
-.social__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
-}
-
-.social__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
-}
-
-.page-footer__copyright {
-  margin: 0;
-
-  margin-right: -5px;
-  display: flex;
-  align-items: center;
-
-  @include font-param(14px, 18px);
-  color: #283645;
-}
-
-.page-footer__icon {
-
-  margin-left: 10px;
-  fill: #d22855;
-
-  &:hover {
-    fill: #000000;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    padding-top: 0;
-  }
-
-  .page-footer__wrapper {
-    height: 125px;
-    max-width: 620px;
-    flex-direction: row;
+  @media (min-width: $tablet-width) {
+    display: flex;
     justify-content: space-between;
-
     align-items: center;
+    width: 100%;
   }
 
-  .social__list {
-    padding-top: 10px;
-    flex-direction: row;
-  }
-
-  .page-footer__copyright {
-    margin-top: 10px;
-    margin-left: 10px;
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer__logo-image--desktop {
-    display: block;
+.page-footer__logo {
+  display: block;
+  width: 147px;
+  height: 41px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 
-  .page-footer__logo-image--tablet {
+  @media (min-width: $desktop-width) {
+    margin-top: -20px;
+  }
+}
+
+.page-footer__logo-img {
+  width: 100%;
+  height: 100%;
+  fill: $color-main;
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 
-  .page-footer {
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 225px;
+  &:hover {
+    fill: $color-secondary;
   }
 
-  .page-footer__wrapper {
-    max-width: 940px;
-    width: 940px;
-    margin: 0 auto;
-    padding-top: 60px;
+  &:active {
+    fill-opacity: 0.3;
   }
 
-  .social__list {
-    margin-left: 25px;
+  &--desk {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 11px;
+    margin-left: -25px;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 12px;
   }
 
-  .page-footer__copyright {
-    @include font-param(18px, 18px);
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+  }
+}
+
+.page-footer__copyright-text {
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.2857em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.2857em;
+  }
+}
+
+.page-footer__copyright-link {
+  width: 27px;
+  height: 34px;
+}
+
+.page-footer__copyright-link svg {
+  fill: $color-secondary;
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
   }
 }

@@ -1,0 +1,20 @@
+.foto-caption-text {
+  width: 240px;
+  margin: 0 auto;
+  padding: 45px 0 52px 0;
+  line-height: 2.1428em;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 450px;
+    margin: 0 auto;
+    padding: 90px 0 78px 0;
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    padding: 90px 0;
+  }
+}

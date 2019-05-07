@@ -1,0 +1,156 @@
+.review {
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 170px;
+    padding-bottom: 40px;
+  }
+}
+
+.review__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.review__item {
+  margin: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 690px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      width: 79px;
+      height: 64px;
+      position: absolute;
+      top: -100px;
+      left: 310px;
+      background-image: url("../img/icon-quotes.svg");
+    }
+  }
+}
+
+.review__author-name {
+  font-style: normal;
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  font-weight: 700;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    font-size: $font-size--larger + 2px;
+    line-height: 1.5em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--large;
+    line-height: 1.25em;
+  }
+}
+
+.review__author-subtitle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    line-height: 2.1428;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+}
+
+.review__text {
+  padding-top: 15px;
+  line-height: 2.1428em;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-bottom: 32px;
+    font-size: $font-size--larger;
+    line-height: 1.667em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+/*расположение кнопок слайдера туда-сюда*/
+.review__btn-prev,
+.review__btn-next {
+  display: none;
+  position: absolute;
+  top: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.review__btn-prev {
+  left: 5px;
+}
+
+.review__btn-next {
+  right: 5px;
+}
+
+.review__btn-prev svg,
+.review__btn-next svg {
+  fill: $gray-194;
+
+  &:hover {
+    fill: $gray-126;
+  }
+
+  &:active {
+    fill: $gray-233;
+  }
+}
+
+/*положение трех круглых кнопок слайдера*/
+.review__toggles {
+  width: 60px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
