@@ -1,0 +1,36 @@
+.field-actions {
+  order: 50;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.field-actions__remark {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    text-align: right;
+  }
+}
+
+.field-actions__symbol {
+  color: $color-secondary;
+}
+
+.field-actions__text {
+  line-height: 2.1428em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}

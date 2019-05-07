@@ -1,71 +1,34 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2");
-  src: url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  src: url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff2") format("woff2");
-  src: url("../fonts/opensanslight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@import "mixin.scss";
+@import "normalize.scss";
 @import "variables.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/download.scss";
-@import "blocks/features.scss";
-@import "blocks/reviews.scss";
-@import "blocks/price.scss";
+//===
+@import "blocks/global.scss";
+//===
+@import "blocks/aside.scss";
+@import "blocks/button.scss";
 @import "blocks/contacts.scss";
-@import "blocks/photo.scss";
-@import "blocks/editor.scss";
+@import "blocks/copyright.scss";
+@import "blocks/field-actions.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/field-contact.scss";
+@import "blocks/field-radio.scss";
+@import "blocks/field-text.scss";
+@import "blocks/field-textarea.scss";
+@import "blocks/form-caption-text.scss";
+@import "blocks/form-remark.scss";
+@import "blocks/form.scss";
+@import "blocks/foto-caption-text.scss";
+@import "blocks/foto-wrap.scss";
+@import "blocks/foto.scss";
+@import "blocks/information.scss";
+@import "blocks/intro.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/contest.scss";
-
-
-body {
-  margin: 0;
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  background-color: #283645;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    min-width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    min-width: $desktop-width;
-  }
-}
+@import "blocks/page-header.scss";
+@import "blocks/popup.scss";
+@import "blocks/review.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/tariffs.scss";
+@import "blocks/range.scss";
+@import "blocks/upload.scss";

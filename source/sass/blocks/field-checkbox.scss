@@ -1,0 +1,77 @@
+.field-сheckbox {
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+}
+
+.field-сheckbox__wrap-desk {
+  @media (min-width: $desktop-width) {
+    max-width: 260px;
+  }
+}
+
+/*===стилизация чек-бокс===*/
+.field-сheckbox__input {
+  /*скрытие стандартного чек-бокса*/
+  display: none;
+}
+
+.field-сheckbox__label {
+  /*подготовка места для кастом-чек-бокса = стилизация label*/
+  position: relative;
+  display: block;
+  margin: 10px 0 52px 0;
+  padding-left: 70px;
+  cursor: pointer;
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.field-сheckbox__label::before {
+  /*стилизация фона checkbox*/
+  content: "";
+  width: 38px;
+  height: 38px;
+  border: 1px solid $gray-229;
+  border-radius: 2px;
+  background: #ffffff;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.field-сheckbox__label:hover::before {
+  border-color: $color-main;
+}
+
+.field-сheckbox__label:active::before {
+  border-color: $color-secondary;
+}
+
+/*переключение состояния чек-бокса*/
+.field-сheckbox__input:checked + .field-сheckbox__label::after {
+  /*стилизация активного чек-бокса*/
+  content: "";
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-yes-pink.svg");
+
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}

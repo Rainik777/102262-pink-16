@@ -1,0 +1,172 @@
+.foto {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: $gray-242;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+
+  &--wide {
+    width: 100%;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 49px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.foto__banner {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 5px 20px;
+  font-size: $font-size--smaller;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    right: 10px;
+  }
+}
+
+.foto__img {
+  width: 100%;
+  height: 181px;
+  cursor: pointer;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+
+  &--wide {
+    height: 137px;
+
+    @media (min-width: $tablet-width) {
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 505px;
+    }
+  }
+}
+
+.foto__descr {
+  position: relative;
+  width: 280px;
+  margin-top: -7px;
+  padding: 18px 15px 53px 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 155px;
+    padding: 24px 25px 57px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--wide {
+      width: 940px;
+      min-height: 10px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &--wide {
+    margin: 0 auto;
+    margin-top: -7px;
+    background-color: $gray-242;
+
+    @media (min-width: $tablet-width) {
+      width: 620px;
+      min-height: 10px;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+      min-height: 10px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.foto__author {
+  font-weight: 700;
+}
+
+.foto__time {
+  font-size: $font-size--smaller;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.foto__button {
+  position: absolute;
+  bottom: 17px;
+  left: 18px;
+  padding: 0;
+  line-height: 2em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 27px;
+    bottom: 20px;
+    min-width: 242px;
+
+    &--wide {
+      left: auto;
+      bottom: auto;
+      right: 30px;
+      top: 23px;
+      min-width: 120px;
+      background-color: transparent;
+    }
+  }
+}
+
+.foto__button-icon {
+  margin-right: 15px;
+  fill: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.foto__button-title {
+  font-size: $font-size--smaller;
+  text-transform: uppercase;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
