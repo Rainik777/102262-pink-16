@@ -125,6 +125,7 @@
 
 .foto__button {
   position: absolute;
+  z-index: 2;
   bottom: 17px;
   left: 18px;
   padding: 0;
@@ -150,6 +151,22 @@
       background-color: transparent;
     }
   }
+}
+
+.foto__button:hover .foto__button-icon {
+  fill: $color-main;
+}
+
+.foto__button:active .foto__button-icon {
+  fill: $color-main--lighten;
+}
+
+.foto__button:hover .foto__button-title {
+  color: $color-main;
+}
+
+.foto__button:active .foto__button-title {
+  color: $color-main--lighten;
 }
 
 .foto__button-icon {

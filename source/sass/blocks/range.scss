@@ -45,6 +45,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+
     &::after {
       width: 410px;
       left: 0;

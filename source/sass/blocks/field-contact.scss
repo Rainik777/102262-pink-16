@@ -11,6 +11,8 @@
       right: 2px;
       width: 59px;
       height: 59px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
       background-color: $gray-229;
     }
 
@@ -35,7 +37,7 @@
         content: "";
         position: absolute;
         top: 24px;
-        right: 21px;
+        right: 20px;
         width: 18px;
         height: 14px;
         background-image: url("../img/icon-mail.svg");
@@ -94,7 +96,7 @@
 
   &::placeholder {
     font-size: $font-size--larger;
-    line-height: 1.6667em;
+    line-height: 1em;
     color: $color-main;
   }
 }
