@@ -1,3 +1,8 @@
+.foto-wrap {
+  // для IE
+  overflow: hidden;
+}
+
 .foto-wrap__inner {
   width: 320px;
   margin: 0 auto;
