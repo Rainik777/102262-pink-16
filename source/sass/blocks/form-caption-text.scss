@@ -20,12 +20,10 @@
   }
 }
 
-.form-caption-text__inner {
-  &--no-mob {
+.form-caption-text__inner-no-mob {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: inline;
-    }
   }
 }

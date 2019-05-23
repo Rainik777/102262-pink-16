@@ -29,7 +29,6 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,6 +85,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
     display: block;
     line-height: 2.1428;
   }
