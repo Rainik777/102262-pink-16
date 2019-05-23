@@ -22,8 +22,9 @@
 
 /*===стилизация чек-бокс===*/
 .field-сheckbox__input {
-  /*скрытие стандартного чек-бокса*/
-  display: none;
+  /*прячем стандартный чек-бокса без потери доступности*/
+  position: absolute;
+  opacity: 0;
 }
 
 .field-сheckbox__label {
@@ -74,4 +75,9 @@
   position: absolute;
   top: 7px;
   left: 10px;
+}
+
+/*делаем чек-бокс доступным*/
+.field-сheckbox__input:focus + .field-сheckbox__label::before {
+  border-color: $color-main;
 }
