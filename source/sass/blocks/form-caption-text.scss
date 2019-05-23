@@ -21,9 +21,9 @@
 }
 
 .form-caption-text__inner-no-mob {
-    display: none;
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: inline;
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
